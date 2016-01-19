@@ -38,7 +38,6 @@ var primeTime = function (number) {
 }
 
 var number= prompt("Enter a number please: ");
-
 console.log("Is "+number+" a prime: " + primeTime(number));
 
 //-------------------------------------------------------------//
@@ -53,6 +52,6 @@ var primeRecursion = function (numberR,x) {
 	else return primeRecursion(numberR,++x);
 }
 
-var numberR= parseInt(prompt("Enter a number please: "));
+var numberR= Math.abs(parseInt(prompt("Enter a number please: ")));
 
 console.log("Is "+numberR+" a prime: " +primeRecursion(numberR,2));
