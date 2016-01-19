@@ -37,7 +37,7 @@ var primeTime = function (number) {
 	return true;
 }
 
-var number= prompt("Enter a number please: ");
+var number= Math.abs(parseInt(prompt("Enter a number please: "));
 console.log("Is "+number+" a prime: " + primeTime(number));
 
 //-------------------------------------------------------------//
