@@ -55,4 +55,4 @@ var primeRecursion = function (numberR,x) {
 
 var numberR= parseInt(prompt("Enter a number please: "));
 
-console.log(primeRecursion(numberR,2));
+console.log("Is "+numberR+" a prime: " +primeRecursion(numberR,2));
