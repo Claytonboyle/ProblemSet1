@@ -38,3 +38,18 @@ var primeTime = function (number) {
 var number= prompt("Enter a number please: ");
 
 console.log("Is "+number+" a prime: " + primeTime(number));
+
+
+var primeRecursion = function (numberR,x) {
+	if (x===numberR || numberR===1){
+		return true;
+	}else if (numberR%x===0){
+		console.log("Smallest divisor: "+x);
+		return false;
+	}
+	else return primeRecursion(numberR,++x);
+}
+
+var numberR= parseInt(prompt("Enter a number please: "));
+
+console.log(primeRecursion(numberR,2));
